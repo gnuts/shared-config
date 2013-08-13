@@ -6,6 +6,11 @@ LOCALAUTOSTART=~/.i3autostart.local
 xset dpms 300 600 900 
 
 # start some programs here
+
+# enable Numlock, no matter what
+numlockx
+
+# i love owncloud :)
 owncloud &
 
 # enable KDE bloat
@@ -22,6 +27,7 @@ akonadictl start
 
 
 # now start some frontends
+#kmix replaced by i3status bar and pactl/pa-vol.sh
 #kmix &
 #smb4k &
 
