@@ -4,7 +4,8 @@ shared-config
 my shared workstation configuration
 
 
-this are default configurations for i3wm, and a bit of KDE
+this are default configurations for i3wm, and a bit of KDE.
+
 more default configs will follow
 
 i use this shared-config dir and create some symlinks to the real locations.
