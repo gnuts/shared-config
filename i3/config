@@ -168,16 +168,11 @@ exec dunst
 # activate screensaver
 #bindsym $mod+Control+l exec i3lock -c 111111
 bindsym $mod+l exec notify-send -u critical -t 1000 "locking screen" && sleep 1 && i3lock -c 111111
-#exec xautolock -corners -0-0 -time 1 -locker "i3lock -c 111111" -notify 15 -notifier "notify-send -t 15000 -u critical 'locking screen in 15 seconds'"
 
-# this will blank the screen a short time before it will be locked. gives you time to counteract :)
-exec xautolock -corners -0-0 -time 3 -locker "i3lock -c 111111" -notify 60 -notifier "xset s activate"
+
 
 # volume control
-# fucking kvm switch does not support multimedia keys, so...
-#bindsym $mod+Prior exec ~/shared-bin/pa-vol.sh plus  && notify-send -u low -t 100 "vol $(pa-vol.sh get)"      
-#bindsym $mod+Next  exec ~/shared-bin/pa-vol.sh minus && notify-send -u low -t 100 "vol $(pa-vol.sh get)"      
-#bindsym $mod+End   exec ~/shared-bin/pa-vol.sh mute  && notify-send -u low -t 100 "toggle $(pa-vol.sh get)"
+# my kvm switch does not support multimedia keys, so...
 bindsym $mod+Prior exec ~/shared-bin/pa-vol.sh plus  && paplay ~/.i3/pop.wav
 bindsym $mod+Next  exec ~/shared-bin/pa-vol.sh minus && paplay ~/.i3/pop.wav
 bindsym $mod+End   exec ~/shared-bin/pa-vol.sh mute  && paplay ~/.i3/pop.wav
@@ -202,6 +197,6 @@ bindsym $mod+m move scratchpad
 bindsym $mod+o scratchpad show
 
 # autostart tool
-exec chmod +x ~/.i3/autostart && ~/.i3/autostart
+exec chmod +x ~/.i3/autostart.sh && ~/.i3/autostart.sh
 
 
