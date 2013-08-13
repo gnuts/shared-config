@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# decide, what you like...
+
 notify-send -t 1000 "locking screen"
-#sleep 3
+
+# or
+
 #xset s activate
