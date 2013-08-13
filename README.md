@@ -28,5 +28,22 @@ example:
     chmod +x .i3/autostart .i3/exitdmenu.sh
 
 
+install xautolock and dunst
+
+to make the dmenu for shutdown, pm-suspend, etc work:
+
+    addgroup shutdown
+    vigr (add users to this group)
+
+    /etc/sudoers.d/shutdownusers:
+
+    %shutdown ALL=(root) NOPASSWD: /sbin/reboot
+    %shutdown ALL=(root) NOPASSWD: /sbin/halt
+    %shutdown ALL=(root) NOPASSWD: /sbin/shutdown
+    %shutdown ALL=(root) NOPASSWD: /usr/sbin/pm-hibernate
+    %shutdown ALL=(root) NOPASSWD: /usr/sbin/pm-suspend
+
+completely log out/log in after that.
+
 now start hacking.
 
