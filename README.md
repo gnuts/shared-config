@@ -14,6 +14,7 @@ example:
 
     cd ~
 
+    ln -s shared-config/i3 .i3
     ln -s shared-config/shared-bin shared-bin
     ln -s shared-config/config/dunst .config/dunst
     ln -s shared-config/kde/share/apps/konsole/nuts pastels.colorscheme .kde/share/apps/konsole/nuts pastels.colorscheme
