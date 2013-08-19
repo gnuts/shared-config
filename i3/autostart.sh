@@ -18,7 +18,8 @@ echo "starting up all the good stuff"
 
 # this will blank the screen a short time before it will be locked. gives you time to counteract :)
 #exec xautolock -corners -0-0 -time 3 -locker "i3lock -c 111111" -notify 60 -notifier "xset s activate"
-xautolock -corners -0-0 -time 3 -locker "i3lock -c 111111" -notify 60 -notifier "notify-lock.sh" &
+#xautolock -corners -0-0 -time 3 -locker "i3lock -c 111111" -notify 60 -notifier "notify-lock.sh" &
+xautolock -corners ---- -time 3 -locker "i3lock -c 111111" -notify 60 -notifier "notify-lock.sh" &
 
 
 
