@@ -83,6 +83,8 @@ bindsym $mod+Shift+space floating toggle
 # keepass:
 for_window [title="^Open Database\s+\-"] floating enable
 for_window [title="^Edit Entry$"] floating enable
+for_window [title="^Friends$"] floating enable
+for_window [title="\s+\-\s+Chat"] floating enable
 
 
 
