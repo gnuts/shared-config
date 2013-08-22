@@ -2,7 +2,7 @@
 
 # decide, what you like...
 
-notify-send -t 1000 "locking screen"
+notify-send -t 15000 "locking screen"
 
 # or
 
