@@ -9,6 +9,14 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+
+# setup color
+#client.focused          #FF0000 #FF3000 #000055 #2e9ef4
+#client.focused_inactive #333333 #ff9968 #ffffff #484e50
+#client.unfocused        #333333 #8B0000 #888888 #292d2e
+#client.urgent           #2f343a #900000 #ffffff #900000
+
+
 set $mod Mod4
 #set $mod Mod1
 
@@ -83,6 +91,7 @@ bindsym $mod+Shift+space floating toggle
 # keepass:
 for_window [title="^Open Database\s+\-"] floating enable
 for_window [title="^Edit Entry$"] floating enable
+for_window [title="^Find$"] floating enable
 # steam:
 for_window [title="^Friends$"] floating enable
 for_window [title="\s+\-\s+Chat"] floating enable
