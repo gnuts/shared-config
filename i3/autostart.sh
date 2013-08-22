@@ -12,6 +12,11 @@ echo "starting up all the good stuff"
 
 #xset dpms 300 600 900 
 
+# start synaptic touchpad driver if available
+test -x /usr/bin/syndaemon && syndaemon -t -k -i 1 -d
+test -x /usr/bin/synclient && synclient PalmDetect=1
+
+
 
 # setup screenlocker
 #exec xautolock -corners -0-0 -time 1 -locker "i3lock -c 111111" -notify 15 -notifier "notify-send -t 15000 -u critical 'locking screen in 15 seconds'"
