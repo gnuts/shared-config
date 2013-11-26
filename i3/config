@@ -220,6 +220,7 @@ for_window [title=" \- KeePass$"] move scratchpad
 # scratchpad
 bindsym $mod+m move scratchpad
 bindsym $mod+o scratchpad show
+bindsym $mod+y scratchpad show
 
 # autostart tool
 exec chmod +x ~/.i3/autostart.sh && ~/.i3/autostart.sh
