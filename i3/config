@@ -91,6 +91,7 @@ bindsym $mod+Shift+space floating toggle
 # keepass:
 #for_window [title="kdbx \- Keepass\s+"] floating enable
 for_window [title="^Open Database\s+\-"] floating enable
+for_window [title="^Add Entry$"] floating enable
 for_window [title="^Edit Entry$"] floating enable
 for_window [title="^Find$"] floating enable
 # steam:
@@ -220,7 +221,7 @@ for_window [title=" \- KeePass$"] move scratchpad
 # scratchpad
 bindsym $mod+m move scratchpad
 bindsym $mod+o scratchpad show
-bindsym $mod+y scratchpad show
+bindsym $mod+q scratchpad show
 
 # autostart tool
 exec chmod +x ~/.i3/autostart.sh && ~/.i3/autostart.sh
