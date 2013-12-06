@@ -33,6 +33,10 @@ xautolock -corners ---- -time 3 -locker "i3lock -c 111111" -notify 60 -notifier 
 # enable Numlock, no matter what
 numlockx
 
+# disable capslock. i hate capslock
+setxkbmap -option ctrl:nocaps
+
+
 # i love owncloud :)
 owncloud &
 
