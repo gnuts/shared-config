@@ -91,6 +91,7 @@ bindsym $mod+Shift+space floating toggle
 # keepass:
 #for_window [title="kdbx \- Keepass\s+"] floating enable
 for_window [title="^Open Database\s+\-"] floating enable
+for_window [title="^Open Database File$"] floating enable
 for_window [title="^Add Entry$"] floating enable
 for_window [title="^Edit Entry$"] floating enable
 for_window [title="^Find$"] floating enable
