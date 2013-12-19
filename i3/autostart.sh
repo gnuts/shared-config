@@ -37,9 +37,6 @@ numlockx
 setxkbmap -option ctrl:nocaps
 
 
-# i love owncloud :)
-owncloud &
-
 # enable KDE bloat
 # i have no idea why i need --check, but it only works this way:
 kded4 --check
@@ -61,6 +58,10 @@ akonadictl start
 
 # kill knotify4 if it is running
 killall -9 knotify4
+
+# i love owncloud :)
+owncloud &
+
 
 echo got here
 #
