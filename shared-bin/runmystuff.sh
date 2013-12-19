@@ -1,4 +1,5 @@
 #!/bin/bash
+keepassfile="/home/nuts/ownCloud/nutsprivate.kdbx"
 
 e="exec --no-startup-id"
 t="$e x-terminal-emulator"
@@ -29,7 +30,8 @@ i3-msg "layout tabbed"
 i3-msg "$e smb4k"
 i3-msg "$e firefox"
 i3-msg "$e kontact"
-i3-msg "$e keepass2"
+i3-msg "$e keepass2 $keepassfile"
+ 
 
 # need to find a way to wait for these programs, then switch workspace....
 
