@@ -237,7 +237,7 @@ bindsym $mod+o scratchpad show
 bindsym $mod+q scratchpad show
 
 # monitor xrandr menu
-bindsym $mod+n exec ~/.i3/monitordmenu.sh
+bindsym $mod+k exec ~/.i3/monitordmenu.sh
 
 # autostart tool
 exec chmod +x ~/.i3/autostart.sh && ~/.i3/autostart.sh
