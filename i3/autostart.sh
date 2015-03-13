@@ -10,7 +10,11 @@ chmod +x ~/shared-bin/setup-shared-config.sh && ~/shared-bin/setup-shared-config
 echo "starting up all the good stuff"
 
 
+
 #xset dpms 300 600 900 
+
+# disable mouse acceleration
+xset m 0 0
 
 # start synaptic touchpad driver if available
 test -x /usr/bin/syndaemon && syndaemon -t -k -i 1 -d
@@ -24,7 +28,9 @@ test -x /usr/bin/synclient && synclient PalmDetect=1
 # this will blank the screen a short time before it will be locked. gives you time to counteract :)
 #exec xautolock -corners -0-0 -time 3 -locker "i3lock -c 111111" -notify 60 -notifier "xset s activate"
 #xautolock -corners -0-0 -time 3 -locker "i3lock -c 111111" -notify 60 -notifier "notify-lock.sh" &
-xautolock -corners ---- -time 3 -locker "i3lock -c 111111" -notify 60 -notifier "notify-lock.sh" &
+#xautolock -corners ---- -time 3 -locker "i3lock -c 111111" -notify 60 -notifier "notify-lock.sh" &
+xautolock -corners ---- -time 3 -locker "i3lock -c 111111" -notify 60 -notifier "/home/nuts/shared-bin/notify-lock.sh" &
+
 
 
 
@@ -37,17 +43,18 @@ numlockx
 setxkbmap -option ctrl:nocaps
 
 
-# enable KDE bloat
-# i have no idea why i need --check, but it only works this way:
-kded4 --check
-kded4
-qdbus org.kde.kded /kded loadSecondPhase
-qdbus org.kde.kded /kded loadModule powerdevil
-qdbus org.kde.kded /kded loadModule networkmanagement
-
-# restart akonadi
-nepomukserver &
-akonadictl start 
+# i now use cinnamon, kde was way too much bloat
+### # enable KDE bloat
+### # i have no idea why i need --check, but it only works this way:
+### kded4 --check
+### kded4
+### qdbus org.kde.kded /kded loadSecondPhase
+### qdbus org.kde.kded /kded loadModule powerdevil
+### qdbus org.kde.kded /kded loadModule networkmanagement
+### 
+### # restart akonadi
+### nepomukserver &
+### akonadictl start 
 
 
 # now start some frontends
@@ -56,14 +63,13 @@ akonadictl start
 #smb4k &
 
 
-# kill knotify4 if it is running
-killall -9 knotify4
+### # kill knotify4 if it is running
+### killall -9 knotify4
 
 # i love owncloud :)
 owncloud &
 
 
-echo got here
 #
 # now start local programs if local file exists
 

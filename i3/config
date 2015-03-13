@@ -162,8 +162,8 @@ mode "resize" {
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 9 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Down resize shrink height 9 px or 10 ppt
+        bindsym Up resize grow height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape
@@ -177,7 +177,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status --config ~/.i3/i3status.conf
-        tray_output primary
+        #tray_output primary
 }
 
 
@@ -204,9 +204,9 @@ bindsym $mod+F8 exec /usr/bin/cmus-remote -n
 # prev
 bindsym $mod+F7 exec /usr/bin/cmus-remote -r
 # volume controls
-bindsym $mod+F10  exec ~/shared-bin/pa-vol.sh minus && paplay ~/.i3/pop.wav
-bindsym $mod+F11 exec ~/shared-bin/pa-vol.sh plus  && paplay ~/.i3/pop.wav
-bindsym $mod+F12   exec ~/shared-bin/pa-vol.sh mute  && paplay ~/.i3/pop.wav
+bindsym $mod+F10   exec ~/shared-bin/pa-vol.sh mute  && paplay ~/.i3/pop.wav
+bindsym $mod+F11  exec ~/shared-bin/pa-vol.sh minus && paplay ~/.i3/pop.wav
+bindsym $mod+F12 exec ~/shared-bin/pa-vol.sh plus  && paplay ~/.i3/pop.wav
 
 
 # rename workspace

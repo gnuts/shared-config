@@ -5,5 +5,5 @@
 #notify-send -t 5000 "locking screen"
 
 # or
-
-xset s activate
+#echo "locking screen soon"
+sleep 1 && xset s activate

@@ -29,7 +29,8 @@ i3-msg "workspace 2"
 i3-msg "layout tabbed"
 i3-msg "$e smb4k"
 i3-msg "$e firefox"
-i3-msg "$e kontact"
+i3-msg "$e thunderbird"
+#i3-msg "$e kontact"
 i3-msg "$e keepass2 $keepassfile"
  
 
